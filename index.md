@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+# smg
 
-You can use the [editor on GitHub](https://github.com/4nkitd/smg/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+    A cli tool, that helps me automate shit on server, at least that's the idea.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## usage 
 
-### Markdown
+```bash
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+$bash /home/ubuntu > smg
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+Usage:
+  smg [command]
 
-- Bulleted
-- List
+Available Commands:
+  completion  generate the autocompletion script for the specified shell
+  dbDump      dbDump filename.sql
+  help        Help about any command
+  lump        lump nginx mysql php8
 
-1. Numbered
-2. List
+Flags:
+  -h, --help   help for smg
 
-**Bold** and _Italic_ and `Code` text
+Use "smg [command] --help" for more information about a command. 
 
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+# Available Commands
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/4nkitd/smg/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+ - lump
+ - dbDump // in BETA , DO NOT RUN THIS
 
-### Support or Contact
+## lump
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+> lump allows you to install a few req. tools without looking into docs.
+
+> ###  Supported Application and their identifiers
+> - Php ( php7.4 , php7.3 , php7.2 ) 
+> - Mysql ( mysql ) 
+> - Nginx ( nginx )
