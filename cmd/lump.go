@@ -16,7 +16,7 @@ func InitServer() *cobra.Command {
 
 	c := &cobra.Command{
 		Use:   "lump [Nginx, Mysql, Php8]",
-		Short: "lump nginx mysql php8",
+		Short: "lump nginx mysql php",
 		Long: `"lump" Commands allow you to install you need to setup a new Server.
 				
 				# Supported Applications List

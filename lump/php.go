@@ -65,6 +65,7 @@ func Addons(version string) {
 		"php" + version + "-zip",
 		"php" + version + "-intl",
 		"php" + version + "-fpm",
+		"-y",
 	}
 
 	utils.Exec("sudo", extensions...)

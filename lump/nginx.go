@@ -39,7 +39,7 @@ func InstallNginx() {
 
 	UpdateNginxSourceList()
 
-	status, resp := utils.Exec("sudo", "apt", "install", "nginx")
+	status, resp := utils.Exec("sudo", "apt", "install", "nginx", "-y")
 
 	if status == true {
 		fmt.Println(resp, "\n", " Installation was a success!")
