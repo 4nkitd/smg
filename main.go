@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 	"smg/cmd"
 
@@ -22,13 +23,18 @@ type Header struct {
 
 func main() {
 
+	defer func() {
+		if err := recover(); err != nil {
+			log.Println("by bie. try -h for help.")
+		}
+	}()
+
 	RootCmd.AddCommand(cmd.InitServer())
 	RootCmd.AddCommand(cmd.DbDumper())
 	RootCmd.AddCommand(cmd.Decrypt())
 	RootCmd.AddCommand(cmd.Encrypt())
 	RootCmd.AddCommand(cmd.Gen())
 	RootCmd.AddCommand(cmd.GenKey())
-	RootCmd.AddCommand(cmd.Gen())
 	RootCmd.AddCommand(cmd.Verify())
 
 	RootCmd.Execute()

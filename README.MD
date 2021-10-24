@@ -15,8 +15,14 @@ Usage:
 Available Commands:
   completion  generate the autocompletion script for the specified shell
   dbDump      dbDump filename.sql
+  decrypt     Decrypts string/file
+  encrypt     Encrypts string/file
+  gen         Generate the hash from string/file
+  gen         Generate the hash from string/file
+  genkeys     Generates RSA key pair
   help        Help about any command
-  lump        lump nginx mysql php8
+  lump        lump nginx mysql php
+  verify      Verify the hash from string/file
 
 Flags:
   -h, --help   help for smg
@@ -29,7 +35,11 @@ Use "smg [command] --help" for more information about a command.
 # Available Commands
 
  - lump
- - dbDump // in BETA , DO NOT RUN THIS
+ - dbDump 
+ - decrypt
+ - encrypt
+ - gen
+ - verify
 
 ## lump
 
