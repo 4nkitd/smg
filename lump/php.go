@@ -10,7 +10,6 @@ func Installphp() {
 	utils.Exec("sudo", "apt-get", "install", "software-properties-common")
 	utils.Exec("sudo", "add-apt-repository", "ppa:ondrej/php")
 	utils.Exec("sudo", "apt-get", "update")
-	utils.Exec("sudo", "apt-get", "-y", "php7.4")
 
 }
 
@@ -41,6 +40,16 @@ func Php72() {
 	fmt.Println("Installing php 7.2 ...")
 
 	Addons("7.2")
+
+}
+
+func Php80() {
+
+	utils.Exec("sudo", "apt-get", "-y", "php8.0")
+
+	fmt.Println("Installing php 8.0 ...")
+
+	Addons("8.0")
 
 }
 

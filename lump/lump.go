@@ -53,4 +53,13 @@ func InstallerInit(cmd *cobra.Command, args []string) {
 
 	}
 
+	if utils.SearchString(args, "php8.0") == true {
+
+		Installphp()
+		Php80()
+
+	}
+
+	utils.Exec("sudo", "apt", "autoremove")
+
 }

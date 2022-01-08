@@ -26,6 +26,7 @@ func InitServer() *cobra.Command {
 					3. Php7.4
 					4. Php7.3
 					5. Php7.2
+					5. Php8.0
 		
 		`,
 		Args: cobra.MinimumNArgs(1),
